@@ -1,4 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
+<<<<<<< HEAD
 import { ConfigService } from '../config/config';
 import { DatabaseConnectionFactory } from '../database/database-service';
 import { UsersController } from './users.controller';
@@ -47,5 +48,24 @@ describe('UsersController', () => {
 
   it('should be defined', () => {
     expect(userController).toBeDefined();
+=======
+import { UsersController } from './users.controller';
+import { UsersService } from './users.service';
+
+describe('UsersController', () => {
+  let controller: UsersController;
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      controllers: [UsersController],
+      providers: [UsersService],
+    }).compile();
+
+    controller = module.get<UsersController>(UsersController);
+  });
+
+  it('should be defined', () => {
+    expect(controller).toBeDefined();
+>>>>>>> 4c05bef (generate resource - users)
   });
 });

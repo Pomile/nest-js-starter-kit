@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import { IsEmail, IsString } from 'class-validator';
 export class CreateUserDto {
@@ -14,4 +15,8 @@ export class CreateUserDto {
   confirmPassword: string;
   @IsString()
   phone?: number;
+=======
+export class CreateUserDto {
+  
+>>>>>>> 4c05bef (generate resource - users)
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   Entity,
   Column,
@@ -35,3 +36,6 @@ export class User {
   })
   updated_at?: Date;
 }
+=======
+export class User {}
+>>>>>>> 4c05bef (generate resource - users)

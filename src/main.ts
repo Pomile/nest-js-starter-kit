@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+=======
+import { NestFactory } from '@nestjs/core';
+>>>>>>> 4c05bef (generate resource - users)
 import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+<<<<<<< HEAD
   const config = new DocumentBuilder()
     .setTitle('Nest Starter')
     .setDescription('The NestJs Starter API')
@@ -20,6 +25,8 @@ async function bootstrap() {
       transform: true,
     }),
   );
+=======
+>>>>>>> 4c05bef (generate resource - users)
   await app.listen(3000);
 }
 bootstrap();
