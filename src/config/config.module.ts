@@ -1,8 +1,11 @@
-import { DynamicModule, Module } from '@nestjs/common';
+import { DynamicModule, Global, Module } from '@nestjs/common';
 import { ConfigService } from './config';
+import { CONFIG_OPTIONS } from './constants';
 
+@Global()
 @Module({
   providers: [ConfigService],
+  exports: [ConfigService],
 })
 export class ConfigModule {
   static register(options): DynamicModule {
@@ -10,7 +13,7 @@ export class ConfigModule {
       module: ConfigModule,
       providers: [
         {
-          provide: 'CONFIG_OPTIONS',
+          provide: CONFIG_OPTIONS,
           useValue: options,
         },
         ConfigService,

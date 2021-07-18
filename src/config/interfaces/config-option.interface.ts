@@ -1,3 +1,3 @@
-export interface ConfigOptions {
+export interface ConfigOption {
   env: string;
 }

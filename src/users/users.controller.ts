@@ -11,13 +11,10 @@ import {
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-import { ListParam } from './entities/list-param.entity';
-import { Users } from './entities/users-page.entity';
 
 @Controller('api/users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
-
   /**
    * @description Sign up
    * @param createUserDto
@@ -29,7 +26,7 @@ export class UsersController {
   }
 
   @Get()
-  findAll(@Query() query: ListParam): string {
+  findAll(@Query() query) {
     console.log(query);
     return this.usersService.findAll();
   }
