@@ -1,6 +1,5 @@
 
 import { ConfigService } from 'src/config/config';
-import { createConnection } from 'typeorm';
 import { TypeORMDatabaseConnectionFactory } from './database-typeorm';
 import { DatabaseConfig } from './interfaces/database-config.interface';
 
@@ -13,7 +12,6 @@ export class DatabaseConnectionFactory {
     this.configService = configServe;
     this.databaseConfig = config;
     if (config.databaseType === 'relational' && config.orm === 'typeorm') {
-      console.log(config);
       const typeormFactory = new TypeORMDatabaseConnectionFactory(
         config,
         configServe,
