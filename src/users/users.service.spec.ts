@@ -1,17 +1,13 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { UsersService } from './users.service';
-<<<<<<< HEAD
 import { userProviders } from './users.repository';
 import { DatabaseConnectionFactory } from '../database/database-service';
 import { ConfigService } from '../config/config';
-=======
->>>>>>> 4c05bef (generate resource - users)
 
 describe('UsersService', () => {
   let service: UsersService;
 
   beforeEach(async () => {
-<<<<<<< HEAD
     const dbconfig = {
       databaseType: 'relational',
       orm: 'typeorm',
@@ -43,10 +39,6 @@ describe('UsersService', () => {
         ...userProviders,
         UsersService,
       ],
-=======
-    const module: TestingModule = await Test.createTestingModule({
-      providers: [UsersService],
->>>>>>> 4c05bef (generate resource - users)
     }).compile();
 
     service = module.get<UsersService>(UsersService);

@@ -14,11 +14,7 @@
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-<<<<<<< HEAD
     "test": "jest --detectOpenHandles",
-=======
-    "test": "jest",
->>>>>>> 4c05bef (generate resource - users)
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
@@ -29,7 +25,6 @@
     "@nestjs/core": "^8.0.0",
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^8.0.0",
-<<<<<<< HEAD
     "@nestjs/swagger": "^5.0.4",
     "@nestjs/typeorm": "^8.0.1",
     "class-transformer": "^0.4.0",
@@ -45,25 +40,14 @@
     "swagger-ui-express": "^4.1.6",
     "type-dotenv": "^1.0.0-beta.3",
     "typeorm": "^0.2.34"
-=======
-    "reflect-metadata": "^0.1.13",
-    "rimraf": "^3.0.2",
-    "rxjs": "^7.2.0"
->>>>>>> 4c05bef (generate resource - users)
   },
   "devDependencies": {
     "@nestjs/cli": "^8.0.0",
     "@nestjs/schematics": "^8.0.0",
-<<<<<<< HEAD
     "@nestjs/testing": "^8.0.4",
     "@types/express": "^4.17.13",
     "@types/jest": "^26.0.24",
     "@types/joi": "^17.2.3",
-=======
-    "@nestjs/testing": "^8.0.0",
-    "@types/express": "^4.17.13",
-    "@types/jest": "^26.0.24",
->>>>>>> 4c05bef (generate resource - users)
     "@types/node": "^16.0.0",
     "@types/supertest": "^2.0.11",
     "@typescript-eslint/eslint-plugin": "^4.28.2",

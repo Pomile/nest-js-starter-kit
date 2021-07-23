@@ -9,11 +9,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-<<<<<<< HEAD
 .env
 .env.testing
-=======
->>>>>>> 4c05bef (generate resource - users)
 
 # OS
 .DS_Store

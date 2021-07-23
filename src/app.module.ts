@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Inject, Logger, Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -31,16 +30,3 @@ export class AppModule {
       Logger.log(`Connected successfully`, 'Database');
   }
 }
-=======
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { UsersModule } from './users/users.module';
-
-@Module({
-  imports: [UsersModule],
-  controllers: [AppController],
-  providers: [AppService],
-})
-export class AppModule {}
->>>>>>> 4c05bef (generate resource - users)
