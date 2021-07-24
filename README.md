@@ -47,7 +47,7 @@
 ### Examples
 
 `.env` and `.env.testing` should contain the variables below. 
-Make there is no space after the values of each variables
+Make sure there is no space after the values of each variables
 
 ``` 
   NODE_ENV=
