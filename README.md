@@ -26,6 +26,54 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+### Prerequisites
+
+* [MySQL](https://www.mysql.com/downloads/) is the world's most popular open source database.
+* [Postgres](https://www.postgresql.org/download/) is a powerful, open source object-relational database
+* [MongoDB](https://www.mongodb.com/try/download/community) is a document database with the scalability and flexibility
+* [Node](https://nodejs.org/en/download/) is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+* [vscode](https://code.visualstudio.com/) is a Text Editor
+
+### Setup
+
+1. Clone the repository `git clone <repo>`
+2. Cd into the project root directory
+3. Load the code into vscode
+4. Install the app
+5. Create Database schema in either MySQL, Postgres or MongoDb
+6. Create .env and .env.testing files in the project root folder
+7. This step is optional. Modify the database settings in `app.module.ts`. For instance, you could change type value in the config property to either postgres or mysql
+
+### Examples
+
+`.env` and `.env.testing` should contain the variables below. 
+Make there is no space after the values of each variables
+
+``` 
+  NODE_ENV=
+  PORT=
+  HOST=
+  DATABASE_NAME=
+  DATABASE_USERNAME=
+  DATABASE_PASSWORD=
+  DATABASE_PORT=
+
+```
+Database module config example in app.module.ts
+```bash
+
+  DatabaseModule.forRoot({
+        config: {
+          databaseType: 'relational' || 'document',
+          type: 'mysql' || 'postgres' || 'mongodb',
+          orm: 'typeorm' || 'sequelize' || '',
+        },
+        useClass: ConfigService,
+  }),
+  ...
+
+```
+
 ## Installation
 
 ```bash
@@ -64,9 +112,9 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - [Babatunde Ogedengbe](https://github.com/Pomile)
+- LinkedIn - [Profile](www.linkedin.com/in/ogedengbe-babatunde-b00b4759)
+
 
 ## License
 
